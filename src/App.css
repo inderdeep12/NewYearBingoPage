@@ -1,0 +1,30 @@
+/* In App.css */
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.bingo-square {
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.bingo-square.center {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0056b3;
+}
