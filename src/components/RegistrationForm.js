@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 const RegistrationForm = ({ onRegister }) => {
   const [email, setEmail] = useState("");
@@ -10,23 +11,25 @@ const RegistrationForm = ({ onRegister }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        placeholder="Enter email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Enter PIN"
-        value={pin}
-        onChange={(e) => setPin(e.target.value)}
-        required
-      />
-      <button type="submit">Register</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Enter PIN"
+          value={pin}
+          onChange={(e) => setPin(e.target.value)}
+          required
+        />
+        <button type="submit">Register</button>
+      </form>
+    </div>
   );
 };
 

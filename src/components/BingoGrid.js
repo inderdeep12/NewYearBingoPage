@@ -3,13 +3,7 @@ import BingoCard from "./BingoCard";
 
 const BingoGrid = ({ grid }) => {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(5, 1fr)",
-        gap: "5px",
-      }}
-    >
+    <div className="bingo-grid">
       {grid.map((text, index) => (
         <BingoCard key={index} text={text} isCenter={index === 12} />
       ))}

@@ -3,6 +3,7 @@ import BingoGrid from "../components/BingoGrid";
 import RegistrationForm from "../components/RegistrationForm";
 import BuildGridPage from "./BuildGridPage";
 import { saveUserData, getUserData } from "../services/StorageService";
+import "../App.css";
 
 const HomePage = () => {
   const [user, setUser] = useState(null); // Stores email and PIN
@@ -30,7 +31,11 @@ const HomePage = () => {
 
   // If the user is not logged in, show the registration form
   if (!user) {
-    return <RegistrationForm onRegister={handleRegister} />;
+    return (
+      <div>
+        <RegistrationForm onRegister={handleRegister} />
+      </div>
+    );
   }
 
   // If the user is editing the grid, show the BuildGridPage

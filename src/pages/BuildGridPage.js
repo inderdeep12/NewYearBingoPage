@@ -18,17 +18,19 @@ const BuildGridPage = ({ savedGrid, onSaveGrid }) => {
 
   return (
     <div>
-      {grid.map((text, index) => (
-        <div key={index}>
-          <input
-            type="text"
-            placeholder={index === 12 ? "Bingo" : `Square ${index + 1}`}
-            value={text}
-            onChange={(e) => handleSquareChange(index, e.target.value)}
-            disabled={index === 12} // Disable input for the middle square
-          />
-        </div>
-      ))}
+      <div className="bingo-grid">
+        {grid.map((text, index) => (
+          <div className="bingo-card" key={index}>
+            <input
+              type="text"
+              placeholder={index === 12 ? "Bingo" : `Square ${index + 1}`}
+              value={text}
+              onChange={(e) => handleSquareChange(index, e.target.value)}
+              disabled={index === 12} // Disable input for the middle square
+            />
+          </div>
+        ))}
+      </div>
       <button onClick={handleSave}>Save Grid</button>
     </div>
   );
