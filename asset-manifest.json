@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NewYearBingoPage/static/css/main.e6c13ad2.css",
+    "main.js": "/NewYearBingoPage/static/js/main.50f8978b.js",
+    "static/js/488.b649eb4a.chunk.js": "/NewYearBingoPage/static/js/488.b649eb4a.chunk.js",
+    "index.html": "/NewYearBingoPage/index.html",
+    "main.e6c13ad2.css.map": "/NewYearBingoPage/static/css/main.e6c13ad2.css.map",
+    "main.50f8978b.js.map": "/NewYearBingoPage/static/js/main.50f8978b.js.map",
+    "488.b649eb4a.chunk.js.map": "/NewYearBingoPage/static/js/488.b649eb4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.50f8978b.js"
+  ]
+}
